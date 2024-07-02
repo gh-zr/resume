@@ -1,0 +1,221 @@
+/* 重置所有元素的边距 */
+* {
+    /* 边距为0 */
+    margin: 0;
+    /* 内边距为0 */
+    padding: 0;
+    /* 盒模型为border-box */
+    box-sizing: border-box;
+}
+
+/* 设置 html 元素高度为100%,充满整个视窗 */
+html {
+    /* 高度为100% */
+    height: 100%;
+}
+
+/* 设置 body 最小高度为100%,充满整个视窗 */
+body {
+    /* 最小高度为100% */
+    min-height: 100%;
+    /* 背景色 */
+    background: #eee;
+    /* 字体家族 */
+    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Microsoft YaHei,Source Han Sans SC,Noto Sans CJK SC,WenQuanYi Micro Hei,sans-serif;
+    /* 字体粗细 */
+    font-weight: 400;
+    /* 文字颜色 */
+    color: #222;
+    /* 文字大小 */
+    font-size: 14px;
+    /* 行高 */
+    line-height: 26px;
+    /* 底部边距 */
+    padding-bottom: 50px;
+}
+
+/* 设置容器的最大宽度、背景、阴影等 */
+.container {
+    /* 最大宽度 */
+    max-width: 700px;
+    /* 背景色 */
+    background: #fff;
+    /* 左右自动边距 */
+    margin: 0px auto;
+    /* 阴影 */
+    box-shadow: 1px 1px 2px #DAD7D7;
+    /* 圆角 */
+    border-radius: 3px;
+    /* 内边距 */
+    padding: 40px;
+    /* 顶部边距 */
+    margin-top: 50px;
+}
+
+/* 头部样式 */
+.header {
+    /* 底部边距 */
+    margin-bottom: 30px;
+}
+
+/* 全名样式 */
+.header .full-name {
+    /* 文字大小 */
+    font-size: 40px;
+    /* 文字转换为大写 */
+    text-transform: uppercase;
+    /* 底部边距 */
+    margin-bottom: 5px;
+}
+
+/* 名样式加粗 */
+.header .first-name {
+    /* 字体加粗 */
+    font-weight: 700;
+}
+
+/* 姓样式细体 */
+.header .last-name {
+    /* 字体细体 */
+    font-weight: 300;
+}
+
+/* 联系信息样式 */
+.header .contact-info {
+    /* 底部边距 */
+    margin-bottom: 20px;
+}
+
+/* 邮箱和电话样式 */
+.header .email,
+.header .phone {
+    /* 文字颜色 */
+    color: #999;
+    /* 字体细体 */
+    font-weight: 300;
+}
+
+/* 分隔线样式 */
+.header .separator {
+    /* 高度 */
+    height: 10px;
+    /* 转换为行内块元素 */
+    display: inline-block;
+    /* 左边框 */
+    border-left: 2px solid #999;
+    /* 左右边距 */
+    margin: 0px 10px;
+}
+
+/* 职位样式 */
+.header .position {
+    /* 字体加粗 */
+    font-weight: bold;
+    /* 转换为行内块元素 */
+    display: inline-block;
+    /* 右边距 */
+    margin-right: 10px;
+    /* 下划线 */
+    text-decoration: underline;
+}
+
+/* 详细信息样式 */
+.details {
+    /* 行高 */
+    line-height: 20px;
+}
+
+/* 区域块样式 */
+.details .section {
+    /* 底部边距 */
+    margin-bottom: 40px;
+}
+
+/* 最后一个区域块边距为0 */
+.details .section:last-of-type {
+    /* 底部边距为0 */
+    margin-bottom: 0px;
+}
+
+/* 区域标题样式 */
+.details .section__title {
+    /* 字母间距 */
+    letter-spacing: 2px;
+    /* 文字颜色 */
+    color: #54AFE4;
+    /* 字体加粗 */
+    font-weight: bold;
+    /* 底部边距 */
+    margin-bottom: 10px;
+}
+
+/* 区域块的列表项样式 */
+.details .section__list-item {
+    /* 底部边距 */
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 最后一个列表项边距为0 */
+.details .section__list-item:last-of-type {
+    /* 底部边距为0 */
+    margin-bottom: 0;
+}
+
+/* 左右两列对齐方式 */
+.details .left,
+.details .right {
+    /* 垂直对齐 */
+    vertical-align: top;
+    /* 转换为行内块元素 */
+    display: inline-block;
+}
+
+/* 左列宽度 */
+.details .left {
+    /* 宽度为60% */
+    /* width: 60%; */
+}
+
+/* 右列文本右对齐 */
+.details .right {
+    /* 文本右对齐 */
+    text-align: right;
+    /* 宽度为39% */
+    /* width: 39%; */
+}
+
+/* 名字加粗 */
+.details .name {
+    /* 字体加粗 */
+    font-weight: bold;
+}
+
+/* 链接样式 */
+.details a {
+    /* 去掉下划线 */
+    text-decoration: none;
+    /* 颜色 */
+    color: #000;
+    /* 斜体 */
+    font-style: italic;
+}
+
+/* 鼠标悬停时添加下划线 */
+.details a:hover {
+    /* 文字下划线 */
+    text-decoration: underline;
+    /* 颜色 */
+    color: #000;
+}
+
+/* 每项技能的样式 */
+.details .skills__item {
+    /* 底部边距 */
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 技能条样式 */
